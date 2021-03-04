@@ -6,11 +6,11 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create-local": "graph create davekaj/pancakeswap --node http://127.0.0.1:8020",
-    "deploy-local": "graph deploy davekaj/pancakeswap --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "deploy": "graph deploy ianlapham/pancakeswapv2 --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
-    "deploy-staging": "graph deploy $THE_GRAPH_GITHUB_USER/$THE_GRAPH_SUBGRAPH_NAME /PancakeSwap --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
-    "watch-local": "graph deploy graphprotocol/PancakeSwap2 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
+    "create-local": "graph create cryptokek/kekcake --node http://127.0.0.1:8020",
+    "deploy-local": "graph deploy cryptokek/kekcake --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
+    "deploy": "graph deploy cryptokek/kekcake --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
+    "deploy-staging": "graph deploy cryptokek/kekcake /PancakeSwap --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
+    "watch-local": "graph deploy cryptokek/kekcake --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.19.0",
@@ -21,5 +21,13 @@
     "eslint-config-prettier": "^7.1.0",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "yarn": "^1.22.10",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "truffle": "^5.0.4",
+    "truffle-contract": "^4.0.5",
+    "truffle-hdwallet-provider": "^1.0.4"
   }
 }
